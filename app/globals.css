@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFCF6;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -14,8 +20,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FFFCF6;
+    --foreground: #000000;
   }
 }
 
