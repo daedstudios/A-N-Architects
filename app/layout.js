@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono, Inter, Libre_Baskerville, Baskervville } from "next/font/google";
 import "./globals.css";
+import TopNav from "@/components/TopNav";
+import Fotter from "@/components/Fotter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,8 +38,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     <body className={`${interSans.variable} ${Baskerville.variable} antialiased`}>
+      <body
+        className={`${interSans.variable} ${Baskerville.variable} antialiased bg-background text-foreground max-w-screen w-screen h-auto overflow-x-hidden`}
+      >
+        <TopNav />
         {children}
+        <Fotter />
       </body>
     </html>
   );
