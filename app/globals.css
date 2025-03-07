@@ -1,11 +1,16 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 @layer base {
   * {
     @apply m-0 p-0 box-border;
+    
   }
 }
 
+ .underline-hover {
+    @apply  decoration-transparent hover:underline hover:decoration-black underline-offset-4 transition-all duration-700;
+  }
 
 :root {
   --background: #FFFCF6;
