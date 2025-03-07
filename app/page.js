@@ -15,7 +15,7 @@ export default function Home() {
        
            <div className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 sm:col-span-1   "> +NEU </div>
      
-      <div className="col-span-1 place-content-end py-2 md:col-span-2 lg:col-span-4 row-span-1 text-[2rem]"> projekte </div>
+      <div className="col-span-1 py-2 md:col-span-2 lg:col-span-4 row-span-1 text-[2rem] mt-auto"> projekte </div>
          {[project1, project2, project3, project4].map((item, index) => (
             <div key={index} className="relative row-span-1 col-span-1" >
               <div>
@@ -45,7 +45,7 @@ export default function Home() {
             Lebensräume zu schaffen, die die Geschichte ehren und gleichzeitig Innovation in Design und Nachhaltigkeit
             umarmen.
       </p>    
-      <div className="col-span-1 place-content-end py-2 md:col-span-2 lg:col-span-4 row-span-1 text-[2rem]"> auszeichnungen </div>
+      <div className="col-span-1 mt-auto py-2 md:col-span-2 lg:col-span-4 row-span-1 text-[2rem]"> auszeichnungen </div>
 
       <div className="lg:col-span-4 lg:row-span-2 md:col-span-2 md:row-span-2 col-span-1 row-span-3">
        {[1, 2, 3, 4, 5, 6].map((item) => (
