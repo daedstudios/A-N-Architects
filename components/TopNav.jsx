@@ -3,9 +3,12 @@ import React from "react";
 
 const TopNav = () => {
   return (
-    <div className="h-[5.5rem] bg-amber-100 flex justify-between items-center w-full pr-8">
-      <p className="text-3xl">A + N</p>
-      <div className="flex gap-4 underline">
+    <div className="h-[5.5rem] bg-background flex justify-between items-center px-4">
+      <div className=" text-1xl">
+        <p>A+N</p>
+      </div>
+
+      <div className="flex gap-4  justify-end">
         <Link href="/">home</Link>
         <Link href="/projects">projects</Link>
         <Link href="/contact">contact</Link>
