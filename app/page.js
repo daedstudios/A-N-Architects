@@ -5,30 +5,21 @@ import project1 from "@/public/images/project1.png"
 import project2 from "@/public/images/project2.png"
 import project3 from "@/public/images/project3.png"
 import project4 from "@/public/images/project4.png"
-import ImageCard from '@/components/ImageCard'
-
-const data = [
-  { name: project1, details: 'latest project description' },
-  { name: project2, details: 'latest project description' },
-  { name: project3, details: 'latest project description' },
-  { name: project4, details: 'latest project description' },
-]
-
+import { projects_data } from "@/projectsData/all_projects";
+import ImageComponent from "@/components/ImageCard";
 
 export default function Home() {
   return (
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-[auto] grid-rows-[repeat(18,_18rem)] lg:grid-rows-[repeat(10,_18rem)] px-2 gap-2 min-h-screen text-4xl">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-[auto] grid-rows-[repeat(13,_22.5rem)] lg:grid-rows-[repeat(11,_22.5rem)] px-2 gap-2 min-h-screen text-4xl">
       <div className="row-span-1  text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 sm:col-span-1 mt-auto"> ALT </div>
 
       <div className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-3 md:col-span-1 sm:col-span-1   "> +NEU </div>
       <div className="row-span-1 text-[1rem] col-span-1 max-w-[200px]"> ARCHITEKTUR +
 RAUMKULTUR
 SEIT 1992 </div>
-      {/* <div className="col-span-1 py-2 md:col-span-2 lg:col-span-4 text-[1.75rem] mt-auto"> projekte </div> */}
-      {data.map(({ name, details }) => (
+      {projects_data.map(({ name, details, slug, image }) => (
         <React.Fragment key={name}>
-          <ImageCard image={name} details={details} />
+          <ImageComponent image={image} details={details} slug={slug} />
         </React.Fragment>
       ))}
 
