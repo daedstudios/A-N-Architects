@@ -1,17 +1,14 @@
 import Image from "next/image";
-<<<<<<< Updated upstream
-=======
 import page from "./contact/page";
 import project1 from "@/public/images/project1.png"
 import project2 from "@/public/images/project2.png"
 import project3 from "@/public/images/project3.png"
 import project4 from "@/public/images/project4.png"
 
->>>>>>> Stashed changes
-
   
 export default function Home() {
-  return (   
+  return (
+    
         <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-auto grid-rows-[repeat(13,_22.5rem)] lg:grid-rows-[repeat(11,_22.5rem)] px-2 gap-2 min-h-screen text-4xl">
            <div className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 sm:col-span-1 mt-auto"> ALT </div>
        
