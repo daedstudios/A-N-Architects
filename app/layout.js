@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Inter, Libre_Baskerville, Baskervville } from "next/font/google";
 import "./globals.css";
 import TopNav from "@/components/TopNav";
-import Fotter from "@/components/Fotter";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
       >
         <TopNav />
         {children}
-        <Fotter />
+        <Footer/>
       </body>
     </html>
   );
