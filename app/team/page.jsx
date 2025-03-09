@@ -1,6 +1,6 @@
 import React from "react";
 import ImageComponent from "@/components/ImageCard";
-import { projects_data } from "@/projectsData/all_projects";
+import { team_data } from "@/projectsData/teamData";
 
 const page = () => {
   return (
@@ -8,9 +8,9 @@ const page = () => {
       <div className="col-span-1 lg:col-span-4 md:col-span-2 row-span-1 text-[1.75rem] mt-auto">
         UNSER TEAM
       </div>
-      {projects_data.map(({ name, details, slug, image }) => (
+      {team_data.map(({ name, details, image }) => (
         <React.Fragment key={name}>
-          <ImageComponent image={image} details={details} slug={slug} />
+          <ImageComponent image={image} details={details} name={name} />
         </React.Fragment>
       ))}
     </div>
