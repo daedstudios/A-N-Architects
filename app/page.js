@@ -21,7 +21,6 @@ export default function Home() {
         trigger: parentContainer.current,
         start: "bottom 40%",
         end: "bottom top",
-        markers: true,
         scrub: 1,
       },
     });
