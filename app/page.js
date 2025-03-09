@@ -16,7 +16,17 @@ export default function Home() {
 
   useGSAP(() => {
     gsap.to(neuContainer.current, {
-      x: "50vw",
+      x: "50%",
+      scrollTrigger: {
+        trigger: parentContainer.current,
+        start: "bottom 40%",
+        end: "bottom top",
+        markers: true,
+        scrub: 1,
+      },
+    });
+    gsap.to(crossRef.current, {
+      rotation: "360deg",
       scrollTrigger: {
         trigger: parentContainer.current,
         start: "bottom 40%",
@@ -24,8 +34,8 @@ export default function Home() {
         scrub: 1,
       },
     });
-    gsap.to(crossRef.current, {
-      rotation: "360deg",
+    gsap.to(parentContainer.current, {
+      y: "-100%",
       scrollTrigger: {
         trigger: parentContainer.current,
         start: "bottom 40%",
@@ -46,7 +56,7 @@ export default function Home() {
       </div>
 
       <div
-        className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 col-span-1 md:pl-24 pl-12"
+        className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 col-span-1 md:pl-24"
         ref={neuContainer}
       >
         <div className="inline-block" ref={crossRef}>
