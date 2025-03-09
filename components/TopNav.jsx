@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TopNav = () => {
   return (
-    <div className="h-[5.5rem] bg-backgorund border-b top-0 z-100 bg-background sticky flex justify-between items-center px-4">
+    <div className="h-[5.5rem] bg-backgorund border-b-[0.5px] top-0 z-100 bg-background sticky flex justify-between items-center px-4">
       <div className=" text-1xl">
         <p>A+N</p>
       </div>

@@ -1,5 +1,4 @@
 import React from "react"
-
 import page from "./contact/page";
 import project1 from "@/public/images/project1.png"
 import project2 from "@/public/images/project2.png"
@@ -11,10 +10,10 @@ import ImageComponent from "@/components/ImageCard";
 export default function Home() {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-[auto] grid-rows-[repeat(18,_18rem)] md:grid-rows-[repeat(12,_18rem)] lg:grid-rows-[repeat(9,_18rem)] px-2 gap-2 min-h-screen text-4xl">
-      <div className="row-span-1  text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 sm:col-span-1 mt-auto"> ALT </div>
+      {/* <div className="row-span-1  text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 sm:col-span-1 mt-auto"> ALT </div>
 
-      <div className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-3 md:col-span-1 sm:col-span-1   "> +NEU </div>
-      <div className="row-span-1 text-[1rem] col-span-1 max-w-[200px]"> ARCHITEKTUR +
+      <div className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-3 md:col-span-1 sm:col-span-1   "> +NEU </div> */}
+      <div className="row-span-1 text-[1rem] col-span-1 md:col-span-2 mt-30 lg:col-span-4 max-w-[200px]"> ARCHITEKTUR +
 RAUMKULTUR
 SEIT 1992 </div>
       {projects_data.map(({ name, details, slug, image }) => (
@@ -39,7 +38,6 @@ SEIT 1992 </div>
             Lebensräume zu schaffen, die die Geschichte ehren und gleichzeitig Innovation in Design und Nachhaltigkeit
             umarmen.
       </p>    
-   
       
 
       <div className="lg:col-span-4 lg:row-span-2 md:col-span-2 md:row-span-2 col-span-1 mt-16 row-span-3">

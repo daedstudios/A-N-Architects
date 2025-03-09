@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-auto border-t grid-rows-[repeat(2,_18rem)] lg:grid-rows-[repeat(1,_18rem)] px-2 gap-2 bg-background">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-auto border-t-[0.5px] grid-rows-[repeat(2,_18rem)] lg:grid-rows-[repeat(1,_18rem)] px-2 gap-2 bg-background">
       <div className="relative w-[16rem] h-[8rem] col-span-1 row-span-1">
         <Image alt="logo" src="/Logo.svg" fill />
       </div>
