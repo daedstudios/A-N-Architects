@@ -48,6 +48,7 @@ const TopNav = () => {
           onClick={() => setOpen(!open)}
         >
           <Image
+            alt='plus'
             src="/plus.svg"
             width={24}
             height={24}
