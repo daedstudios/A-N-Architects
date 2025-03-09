@@ -11,7 +11,7 @@ const ImageComponent = ({ image, details, slug }) => (
         className="grayscale hover:grayscale-0 cursor-pointer duration-300 aspect-square"
       />
     </div>
-    <div className="text-sm  text-gray-600 ">{details}</div>
+    <div className="text-[1rem] mt-2 text-gray-600 ">{details}</div>
   </Link>
 );
 
