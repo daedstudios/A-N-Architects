@@ -1,16 +1,67 @@
+"use client";
 import React from "react";
 import { projects_data } from "@/projectsData/all_projects";
 import ImageComponent from "@/components/ImageCard";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
+  const neuContainer = useRef(null);
+  const parentContainer = useRef(null);
+  const crossRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.to(neuContainer.current, {
+      x: "50%",
+      scrollTrigger: {
+        trigger: parentContainer.current,
+        start: "bottom 40%",
+        end: "bottom top",
+        scrub: 1,
+      },
+    });
+    gsap.to(crossRef.current, {
+      rotation: "360deg",
+      scrollTrigger: {
+        trigger: parentContainer.current,
+        start: "bottom 40%",
+        end: "bottom top",
+        scrub: 1,
+      },
+    });
+    gsap.to(parentContainer.current, {
+      y: "-100%",
+      scrollTrigger: {
+        trigger: parentContainer.current,
+        start: "bottom 40%",
+        end: "bottom top",
+        scrub: 1,
+      },
+    });
+  }, []);
+
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-[auto] grid-rows-[repeat(18,_18rem)] md:grid-rows-[repeat(12,_18rem)] lg:grid-rows-[repeat(9,_18rem)] px-2 gap-2 min-h-screen text-4xl">
-      {/* <div className="row-span-1  text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 sm:col-span-1 mt-auto"> ALT </div>
-
-      <div className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-3 md:col-span-1 sm:col-span-1   "> +NEU </div> */}
-      <div className="row-span-1 text-[1rem] col-span-1 md:col-span-2 mt-30 lg:col-span-4 max-w-[200px]">
+      <div
+        className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 col-span-1 mt-auto"
+        ref={parentContainer}
+      >
         {" "}
-        ARCHITEKTUR + RAUMKULTUR SEIT 1992{" "}
+        ALT{" "}
+      </div>
+
+      <div
+        className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 col-span-1 md:pl-24"
+        ref={neuContainer}
+      >
+        <div className="inline-block" ref={crossRef}>
+          +
+        </div>
+        NEU
       </div>
       {projects_data.map(({ name, details, slug, image }) => (
         <React.Fragment key={name}>
