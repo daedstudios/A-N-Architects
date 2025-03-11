@@ -78,7 +78,7 @@ export default function Home() {
         </React.Fragment>
       ))}
 
-      <div className="col-span-1 row-span-1 text-[1.75rem]"> MISSION </div>
+      <div className="col-span-1  row-span-1 text-[1.75rem]"> MISSION </div>
       <p className="text-gray-600 col-span-1 lg:col-span-3 text-[1.5rem]  row-span-1 ">
         Die Firma hat sich der Erhaltung, Restaurierung und adaptiven
         Wiederverwendung historischer Gebäude in ganz Deutschland verschrieben.
@@ -104,11 +104,11 @@ export default function Home() {
         {[1, 2, 3, 4, 5, 6].map((item) => (
           <div
             key={item}
-            className=" border-b py-[2rem] px-2 border-gray-300 flex flex-row justify-between cursor-pointer hover:bg-foreground hover:text-white "
+            className=" border-b py-[2rem] px-2 border-gray-300 flex flex-row justify-between cursor-pointer hover:bg-gray-300 hover:text-white "
           >
             <div className="text-[1rem]">2024</div>
-            <div className="text-[1rem]">heading article</div>
-            <div className="text-[1rem]">heading article</div>
+            <div className="text-[1rem]">Architekturpreis</div>
+            <div className="text-[1rem]">zum Artikel</div>
           </div>
         ))}
       </div>
