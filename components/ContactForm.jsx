@@ -1,8 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import gsap from "gsap";
 
 export default function ContactForm() {
+  const coverRef = useRef(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,10 +22,24 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    gsap.to(coverRef.current, {
+      duration: 1,
+      height: "100%",
+      ease: "power4.out",
+    });
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full divide-y-2 divide-gray-200">
+    <form
+      onSubmit={handleSubmit}
+      className="relative w-full divide-y-2 divide-gray-200"
+    >
+      <div
+        className="absolute top-0  left-0 h-0 w-full bg-red-50"
+        ref={coverRef}
+      >
+        Response submitted
+      </div>
       <div className="flex justify-between items-center py-5">
         <label htmlFor="name" className="text-sm">
           Name
@@ -32,8 +49,9 @@ export default function ContactForm() {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="border-0 focus:outline-0 break-words"
+          className="border-0 focus:outline-0 break-words text-right"
           placeholder="Anton Schiff"
+          style={{ textAlign: "right" }}
         />
       </div>
 
@@ -47,8 +65,9 @@ export default function ContactForm() {
           type="email"
           value={formData.email}
           onChange={handleChange}
-          className="border-0 focus:outline-0 break-words "
+          className="border-0 focus:outline-0 break-words text-right"
           placeholder="anton@gmail.com"
+          style={{ textAlign: "right" }}
         />
       </div>
 
@@ -61,8 +80,9 @@ export default function ContactForm() {
           name="projectType"
           value={formData.projectType}
           onChange={handleChange}
-          className="border-0 focus:outline-0 break-words "
+          className="border-0 focus:outline-0 break-words text-right"
           placeholder="Einfamilienhaus"
+          style={{ textAlign: "right" }}
         />
       </div>
 
@@ -70,14 +90,15 @@ export default function ContactForm() {
         <label htmlFor="description" className="text-sm">
           Beschreibung
         </label>
-        <textarea
+        <input
           id="description"
           name="description"
           value={formData.description}
           onChange={handleChange}
-          className="border-0 focus:outline-0 break-words resize-none"
+          className="border-0 focus:outline-0 break-words resize-none text-right"
           placeholder="Details"
           rows={1}
+          style={{ textAlign: "right" }}
         />
       </div>
 
@@ -90,8 +111,9 @@ export default function ContactForm() {
           name="location"
           value={formData.location}
           onChange={handleChange}
-          className="border-0 focus:outline-0 break-words "
+          className="border-0 focus:outline-0 break-words text-right"
           placeholder="e.g. Trier"
+          style={{ textAlign: "right" }}
         />
       </div>
 
