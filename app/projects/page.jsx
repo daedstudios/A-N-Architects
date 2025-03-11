@@ -9,8 +9,13 @@ const page = () => {
         PROJEKTE
       </div>
       {projects_data.map(({ name, details, slug, image }) => (
-        <React.Fragment key={name}>
-          <ImageComponent image={image} details={details} slug={slug} />
+        <React.Fragment>
+          <ImageComponent
+            image={image}
+            details={details}
+            slug={slug}
+            key={name}
+          />
         </React.Fragment>
       ))}
     </div>

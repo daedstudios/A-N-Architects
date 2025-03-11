@@ -6,7 +6,7 @@ import Image from "next/image";
 const DisplayRow = ({ name, content }) => (
   <div className="flex justify-between py-7 items-center">
     <p className="font-semibold">{name}</p>
-    <p>{content}</p>
+    <p>{typeof content === "object" ? JSON.stringify(content) : content}</p>
   </div>
 );
 
@@ -34,15 +34,23 @@ const Page = ({ params }) => {
       <div className="space-y-4">
         <div className="grid grid-cols-2 text-sm gap-2">
           <section className="px-2 border-gray-200 border border-solid divide-y-1 divide-gray-200">
-            {info.slice(0, 4).map((item, index) => {
+            {info.slice(0, 4).map((item, i) => {
               const [key, value] = Object.entries(item)[0];
-              return <DisplayRow key={index} name={key} content={value} />;
+              return (
+                <DisplayRow key={`${key}-${i}`} name={key} content={value} />
+              );
             })}
           </section>
           <section className="px-2 border-gray-200 border border-solid divide-y-1 divide-gray-200">
-            {info.slice(4).map((item, index) => {
+            {info.slice(4).map((item, i) => {
               const [key, value] = Object.entries(item)[0];
-              return <DisplayRow key={index + 4} name={key} content={value} />;
+              return (
+                <DisplayRow
+                  key={`${key}-${i + 4}`}
+                  name={key}
+                  content={value}
+                />
+              );
             })}
           </section>
         </div>
