@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
+import Image from "next/image";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -19,25 +20,25 @@ export default function Home() {
       x: "50%",
       scrollTrigger: {
         trigger: parentContainer.current,
-        start: "bottom 40%",
+        start: "bottom 60%",
         end: "bottom top",
         scrub: 1,
       },
     });
     gsap.to(crossRef.current, {
-      rotation: "360deg",
+      rotation: "180deg",
       scrollTrigger: {
         trigger: parentContainer.current,
-        start: "bottom 40%",
+        start: "bottom 60%",
         end: "bottom top",
         scrub: 1,
       },
     });
     gsap.to(parentContainer.current, {
-      y: "-100%",
+      y: "-30%",
       scrollTrigger: {
         trigger: parentContainer.current,
-        start: "bottom 40%",
+        start: "bottom 60%",
         end: "bottom top",
         scrub: 1,
       },
@@ -46,23 +47,31 @@ export default function Home() {
 
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-[auto] grid-rows-[repeat(18,_18rem)] md:grid-rows-[repeat(12,_18rem)] lg:grid-rows-[repeat(9,_18rem)] px-2 gap-2 min-h-screen text-4xl">
+      
+     
+      
       <div
-        className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 col-span-1 mt-auto"
+        className="row-span-1 sm:row-span-2 text-[14rem] leading-none text-gray-400  md:text-[18rem] lg:text-[18rem] lg:col-span-2 md:col-span-1 col-span-1 mt-auto"
         ref={parentContainer}
       >
-        {" "}
-        ALT{" "}
+        
+          ALT
+  
+        
       </div>
-
       <div
-        className="row-span-1 text-[8rem] md:text-[12rem] lg:text-[17rem] lg:col-span-4 md:col-span-2 col-span-1 md:pl-24"
+        className="row-span-1 hidden md:block mt-auto text-[1rem] lg:col-span-1 md:col-span-1 col-span-1 max-w-[12rem]  ">
+      ARCHITEKTUR + RAUMKULTUR SEIT 1992</div>
+      <div
+        className="row-span-1 k  lg:col-span-2 md:col-span-1 col-span-1 mt-auto"
         ref={neuContainer}
       >
-        <div className="inline-block" ref={crossRef}>
-          +
-        </div>
-        NEU
+      
+        <div className="inline-block ml-auto" ref={crossRef}>
+          <Image src="/plus.svg" alt="Plus Icon" width={280} height={280} />
+       </div>
       </div>
+     
       {projects_data.map(({ name, details, slug, image }) => (
         <React.Fragment key={name}>
           <ImageComponent image={image} details={details} slug={slug} />
