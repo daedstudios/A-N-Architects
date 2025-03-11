@@ -23,7 +23,7 @@ const TopNav = () => {
   return (
     <>
       <div
-        className={`h-[5.5rem]  top-0 z-100 bg-background sticky flex justify-between items-center px-4`}
+        className={`h-[5.5rem]  top-0 z-90 bg-background sticky flex justify-between items-center px-4`}
       >
         <div className=" text-1xl text-gray-300">
           <p>ALT+</p>
@@ -57,7 +57,7 @@ const TopNav = () => {
         </div>
       </div>
       <div
-        className="flex text-xl flex-col items-end md:hidden w-screen h-0 bg-background text-foreground px-8 overflow-hidden gap-2 pt-8"
+        className="fixed z-100 flex text-xl flex-col items-end md:hidden w-screen h-0 bg-background text-foreground px-8 overflow-hidden gap-2 pt-8"
         ref={ref}
         onClick={() => setOpen(!open)}
       >
