@@ -6,14 +6,14 @@ export const projects_data = [
     image: "project1.png",
     slug: "project1",
     info: [
-      { "projectType": "Beauftragung" },
-      { "builder": "privat" },
-      { "servicePhasesBuilders": "0-9" },
-      { "location": "Trier" },
-      { "period": "2005-2009" },
-      { "photographer": "Eibe Sönneken" },
-      { "awards": "2012 Architekturpreis" },
-      { "publications": "Schöner Wohnen" }
+      { "Projekt Art": "Beauftragung" },
+      { "Bahherr": "privat" },
+      { "Leistungsphasen": "0-9" },
+      { "Ort": "Trier" },
+      { "Zeitraum": "2005-2009" },
+      { "Fotograph": "Eibe Sönneken" },
+      { "Auszeichnungen": "2012 Architekturpreis" },
+      { "Veröffentlichungen": "Schöner Wohnen" }
     ],
     otherdetails: 'WOHNHAUS TRIER RESTAURATION',
     additionalInfo: 'Weiterbauen – Alt und Neu in Einklang bringen Der Altbau aus dem Jahr 1889 wurde behutsam saniert und gartenseitig weitergebaut. Der besondere Charakter des Hauses liegt im bewussten Umgang mit vorhandenen und regionalen Baustoffen und die Umsetzung durch klare, handwerklich anspruchsvolle Details. Die Anknüpfungspunkte hierfür lieferte der Bestand selbst: eine Fassade aus Sandstein-Mauerwerk, keramische und hölzerne Bodenbeläge, eine Holztreppe und ein alter Brunnenkopf. Zeitgemäß und in seinen Materialien klar ablesbar schließt sich der Anbau aus Beton, Holz und Glas an, der zum Garten hin öffnet. Der Putz auf der Giebelfassade wurde mit Zuschlägen aus gemahlenem Sandstein eingefärbt.'
@@ -25,14 +25,14 @@ export const projects_data = [
     image: "project2.png",
     slug: "project2",
     info: [[
-      { "projectType": "Beauftragung" },
-      { "builder": "privat" },
-      { "servicePhasesBuilders": "0-9" },
-      { "location": "Trier" },
-      { "period": "2005-2009" },
-      { "photographer": "Eibe Sönneken" },
-      { "awards": "2012 Architekturpreis" },
-      { "publications": "Schöner Wohnen" }
+      { "Projekt Art": "Beauftragung" },
+      { "Bahherr": "privat" },
+      { "Leistungsphasen": "0-9" },
+      { "Ort": "Trier" },
+      { "Zeitraum": "2005-2009" },
+      { "Fotograph": "Eibe Sönneken" },
+      { "Auszeichnungen": "2012 Architekturpreis" },
+      { "Veröffentlichungen": "Schöner Wohnen" }
     ]
     ],
     otherdetails: 'WOHNHAUS TRIER RESTAURATION',
@@ -45,14 +45,14 @@ export const projects_data = [
     image: "project3.png",
     slug: "project3",
     info: [[
-      { "projectType": "Beauftragung" },
-      { "builder": "privat" },
-      { "servicePhasesBuilders": "0-9" },
-      { "location": "Trier" },
-      { "period": "2005-2009" },
-      { "photographer": "Eibe Sönneken" },
-      { "awards": "2012 Architekturpreis" },
-      { "publications": "Schöner Wohnen" }
+      { "Projekt Art": "Beauftragung" },
+      { "Bahherr": "privat" },
+      { "Leistungsphasen": "0-9" },
+      { "Ort": "Trier" },
+      { "Zeitraum": "2005-2009" },
+      { "Fotograph": "Eibe Sönneken" },
+      { "Auszeichnungen": "2012 Architekturpreis" },
+      { "Veröffentlichungen": "Schöner Wohnen" }
     ]
     ],
     otherdetails: 'WOHNHAUS TRIER RESTAURATION',
@@ -65,14 +65,14 @@ export const projects_data = [
     image: "project4.png",
     slug: "project4",
     info: [[
-      { "projectType": "Beauftragung" },
-      { "builder": "privat" },
-      { "servicePhasesBuilders": "0-9" },
-      { "location": "Trier" },
-      { "period": "2005-2009" },
-      { "photographer": "Eibe Sönneken" },
-      { "awards": "2012 Architekturpreis" },
-      { "publications": "Schöner Wohnen" }
+      { "Projekt Art": "Beauftragung" },
+      { "Bahherr": "privat" },
+      { "Leistungsphasen": "0-9" },
+      { "Ort": "Trier" },
+      { "Zeitraum": "2005-2009" },
+      { "Fotograph": "Eibe Sönneken" },
+      { "Auszeichnungen": "2012 Architekturpreis" },
+      { "Veröffentlichungen": "Schöner Wohnen" }
     ]
     ],
     otherdetails: 'WOHNHAUS TRIER RESTAURATION',
