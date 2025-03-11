@@ -44,7 +44,7 @@ const Page = ({ params }) => {
               );
             })}
         </div>
-        <h1 className="text-[2rem] py-12 font-bold">{otherdetails}</h1>
+        <h1 className="text-[2rem] py-12">{otherdetails}</h1>
         <p className="text-[1rem] pb-12"> {additionalInfo}</p>
       </div>
     </div>
