@@ -2,21 +2,21 @@ import React from "react";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 
-
 const page = () => {
-
-  return <div>
-    <div className="w-full mx-2">
-      <Image
-        src='/images/blueprint.png'
-        alt="Architectural blueprint with pencii"
-        height={1000}
-        width={500}
-        className="aspect-square h-[400px] object-cover"
-      />
+  return (
+    <div className="px-2">
+      <div className="relative h-[60vh]">
+        <Image
+          src="/images/blueprint.png"
+          alt="blueprint"
+          fill
+          className="cursor-pointer bg-cover bg-center bg-no-repeat"
+          objectFit="cover"
+        />
+      </div>
+      <ContactForm />
     </div>
-    <ContactForm />
-  </div>
+  );
 };
 
 export default page;
