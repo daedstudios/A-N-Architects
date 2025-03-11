@@ -16,7 +16,7 @@ const TopNav = () => {
     if (open) {
       gsap.to(ref.current, { height: "100vh", duration: 0.4 });
     } else {
-      gsap.to(ref.current, { height: "0", duration: 0.4 });
+      gsap.to(ref.current, { height: "0", duration: 1 });
     }
   }, [open]);
 

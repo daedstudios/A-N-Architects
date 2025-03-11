@@ -12,6 +12,7 @@
     "@gsap/react": "^2.1.2",
     "gsap": "^3.12.7",
     "next": "15.2.1",
+    "next-transition-router": "^0.2.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
