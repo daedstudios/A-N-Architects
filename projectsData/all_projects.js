@@ -24,7 +24,7 @@ export const projects_data = [
     details: "Die neoklassizistische Fassade mit Rundbogenfenstern wurde detailgetreu restauriert. Handwerkliche Techniken brachten den ursprünglichen Glanz zurück, während die Struktur für kommende Generationen gesichert wurde.",
     image: "project2.png",
     slug: "project2",
-    info: [[
+    info: [
       { "Projekt Art": "Beauftragung" },
       { "Bahherr": "privat" },
       { "Leistungsphasen": "0-9" },
@@ -33,7 +33,7 @@ export const projects_data = [
       { "Fotograph": "Eibe Sönneken" },
       { "Auszeichnungen": "2012 Architekturpreis" },
       { "Veröffentlichungen": "Schöner Wohnen" }
-    ]
+
     ],
     otherdetails: 'WOHNHAUS TRIER RESTAURATION',
     additionalInfo: 'Weiterbauen – Alt und Neu in Einklang bringen Der Altbau aus dem Jahr 1889 wurde behutsam saniert und gartenseitig weitergebaut. Der besondere Charakter des Hauses liegt im bewussten Umgang mit vorhandenen und regionalen Baustoffen und die Umsetzung durch klare, handwerklich anspruchsvolle Details. Die Anknüpfungspunkte hierfür lieferte der Bestand selbst: eine Fassade aus Sandstein-Mauerwerk, keramische und hölzerne Bodenbeläge, eine Holztreppe und ein alter Brunnenkopf. Zeitgemäß und in seinen Materialien klar ablesbar schließt sich der Anbau aus Beton, Holz und Glas an, der zum Garten hin öffnet. Der Putz auf der Giebelfassade wurde mit Zuschlägen aus gemahlenem Sandstein eingefärbt.'
@@ -44,7 +44,7 @@ export const projects_data = [
     details: "Die alte Fabrikhalle wurde revitalisiert, ohne ihren industriellen Charakter zu verlieren. Die Metallkonstruktionen blieben erhalten, während moderne Technik für Sicherheit und Energieeffizienz sorgt.",
     image: "project3.png",
     slug: "project3",
-    info: [[
+    info: [
       { "Projekt Art": "Beauftragung" },
       { "Bahherr": "privat" },
       { "Leistungsphasen": "0-9" },
@@ -53,7 +53,7 @@ export const projects_data = [
       { "Fotograph": "Eibe Sönneken" },
       { "Auszeichnungen": "2012 Architekturpreis" },
       { "Veröffentlichungen": "Schöner Wohnen" }
-    ]
+
     ],
     otherdetails: 'WOHNHAUS TRIER RESTAURATION',
     additionalInfo: 'Weiterbauen – Alt und Neu in Einklang bringen Der Altbau aus dem Jahr 1889 wurde behutsam saniert und gartenseitig weitergebaut. Der besondere Charakter des Hauses liegt im bewussten Umgang mit vorhandenen und regionalen Baustoffen und die Umsetzung durch klare, handwerklich anspruchsvolle Details. Die Anknüpfungspunkte hierfür lieferte der Bestand selbst: eine Fassade aus Sandstein-Mauerwerk, keramische und hölzerne Bodenbeläge, eine Holztreppe und ein alter Brunnenkopf. Zeitgemäß und in seinen Materialien klar ablesbar schließt sich der Anbau aus Beton, Holz und Glas an, der zum Garten hin öffnet. Der Putz auf der Giebelfassade wurde mit Zuschlägen aus gemahlenem Sandstein eingefärbt.'
@@ -64,7 +64,7 @@ export const projects_data = [
     details: "Der historische Turm in der Glaskuppel wurde mit präziser Ingenieurskunst restauriert. Traditionelle Materialien und moderne Technik garantieren Stabilität und Witterungsbeständigkeit.",
     image: "project4.png",
     slug: "project4",
-    info: [[
+    info: [
       { "Projekt Art": "Beauftragung" },
       { "Bahherr": "privat" },
       { "Leistungsphasen": "0-9" },
@@ -73,7 +73,7 @@ export const projects_data = [
       { "Fotograph": "Eibe Sönneken" },
       { "Auszeichnungen": "2012 Architekturpreis" },
       { "Veröffentlichungen": "Schöner Wohnen" }
-    ]
+  
     ],
     otherdetails: 'WOHNHAUS TRIER RESTAURATION',
     additionalInfo: 'Weiterbauen – Alt und Neu in Einklang bringen Der Altbau aus dem Jahr 1889 wurde behutsam saniert und gartenseitig weitergebaut. Der besondere Charakter des Hauses liegt im bewussten Umgang mit vorhandenen und regionalen Baustoffen und die Umsetzung durch klare, handwerklich anspruchsvolle Details. Die Anknüpfungspunkte hierfür lieferte der Bestand selbst: eine Fassade aus Sandstein-Mauerwerk, keramische und hölzerne Bodenbeläge, eine Holztreppe und ein alter Brunnenkopf. Zeitgemäß und in seinen Materialien klar ablesbar schließt sich der Anbau aus Beton, Holz und Glas an, der zum Garten hin öffnet. Der Putz auf der Giebelfassade wurde mit Zuschlägen aus gemahlenem Sandstein eingefärbt.'
