@@ -3,7 +3,7 @@ import { projects_data } from "@/projectsData/all_projects";
 import Image from "next/image";
 
 const DisplayRow = ({ name, content }) => (
-  <div className="row-span-1 col-span-1 flex justify-between py-7 items-center">
+  <div className="row-span-1 border-b-[0.5px] border-gray-300 col-span-1 flex justify-between py-7 items-center">
     <p className="font-semibold">{name}</p>
     <p>{typeof content === "object" ? JSON.stringify(content) : content}</p>
   </div>
@@ -32,19 +32,15 @@ const Page = ({ params }) => {
         />
       </div>
       <div className="space-y-4">
-        <div className="grid grid-rows-4 grid-cols-1 md:grid-cols-2 text-sm gap-4">  
-            {info.map((item, i) => {
-              const [key, value] = Object.entries(item)[0];
-              return (
-                <DisplayRow
-                  key={`${key}-${i + 4}`}
-                  name={key}
-                  content={value}
-                />
-              );
-            })}
+        <div className="grid grid-rows-4  grid-cols-1 md:grid-cols-2 text-sm gap-4">
+          {info.map((item, i) => {
+            const [key, value] = Object.entries(item)[0];
+            return (
+              <DisplayRow key={`${key}-${i + 4}`} name={key} content={value} />
+            );
+          })}
         </div>
-        <h1 className="text-[2rem] py-12">{otherdetails}</h1>
+        <h1 className="text-[2rem] py-12 text-gray-300">{otherdetails}</h1>
         <p className="text-[1rem] pb-12"> {additionalInfo}</p>
       </div>
     </div>
