@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Inter, Libre_Baskerville, Baskervville } from "next/
 import "./globals.css";
 import TopNav from "@/components/TopNav";
 import Footer from "@/components/Footer";
+import { TransitionProvider } from "@/components/TransitionProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,9 +42,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${interSans.variable} ${Baskerville.variable} antialiased bg-background text-foreground mx-auto max-w-[1210px] w-screen h-auto overflow-x-hidden`}
       >
-        <TopNav />
-        {children}
-        <Footer/>
+        <TransitionProvider>
+          <TopNav />
+          {children}
+          <Footer />
+        </TransitionProvider>
       </body>
     </html>
   );
