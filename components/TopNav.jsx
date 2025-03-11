@@ -25,8 +25,8 @@ const TopNav = () => {
       <div
         className={`h-[5.5rem]  top-0 z-100 bg-background sticky flex justify-between items-center px-4`}
       >
-        <div className=" text-1xl">
-          <p>A+N</p>
+        <div className=" text-1xl text-gray-300">
+          <p>ALT+</p>
         </div>
 
         <div className="gap-4 hidden md:flex justify-end">

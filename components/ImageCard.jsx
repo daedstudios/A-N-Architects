@@ -13,7 +13,7 @@ const ImageComponent = ({ image, details, name, slug }) => (
       />
     </div>
     <div className="text-[1rem] mt-2 text-black ">{name}</div>
-    <div className="text-[1rem] mt-2 text-gray-600 ">{details}</div>
+    <div className="text-[1rem] mt-2 text-background-600 ">{details}</div>
   </Link>
 );
 

@@ -30,18 +30,15 @@ export default function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="relative w-full divide-y-2 divide-gray-200"
-    >
+    <form onSubmit={handleSubmit} className="relative w-full  ">
       <div
-        className="absolute top-0  left-0 h-0 w-full bg-red-50"
+        className="absolute top-85 text-gray-300 overflow-hidden left-0 h-0 w-[10rem] bg-transparent"
         ref={coverRef}
       >
-        Response submitted
+        wir melden uns!
       </div>
-      <div className="flex justify-between items-center py-5">
-        <label htmlFor="name" className="text-sm">
+      <div className="flex justify-between items-center py-5 border-b-[0.5px] border-gray-300">
+        <label htmlFor="name" className="text-sm ">
           Name
         </label>
         <input
@@ -55,7 +52,7 @@ export default function ContactForm() {
         />
       </div>
 
-      <div className="flex justify-between  py-5 items-center">
+      <div className="flex justify-between  py-5 items-center border-b-[0.5px] border-gray-300">
         <label htmlFor="email" className="text-sm">
           Email
         </label>
@@ -71,7 +68,7 @@ export default function ContactForm() {
         />
       </div>
 
-      <div className="flex justify-between  py-5 items-center">
+      <div className="flex justify-between  py-5 items-center border-b-[0.5px] border-gray-300">
         <label htmlFor="projectType" className="text-sm">
           Projektart
         </label>
@@ -86,7 +83,7 @@ export default function ContactForm() {
         />
       </div>
 
-      <div className="flex justify-between  py-5 items-center">
+      <div className="flex justify-between  py-5 items-center border-b-[0.5px] border-gray-300">
         <label htmlFor="description" className="text-sm">
           Beschreibung
         </label>
@@ -102,7 +99,7 @@ export default function ContactForm() {
         />
       </div>
 
-      <div className="flex justify-between  py-5 items-center">
+      <div className="flex justify-between  py-5 items-center border-b-[0.5px] border-gray-300">
         <label htmlFor="location" className="text-sm">
           Ort
         </label>
@@ -120,7 +117,7 @@ export default function ContactForm() {
       <div className="flex justify-end py-5 items-center font-[inter] text-2xl ">
         <button
           type="submit"
-          className="bg-transparent cursor-pointer text-black hover:bg-transparent hover:text-gray-700"
+          className="bg-transparent pb-12 cursor-pointer text-black hover:bg-transparent hover:text-gray-300"
         >
           SEND
         </button>

@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${interSans.variable} ${Baskerville.variable} antialiased bg-background text-foreground max-w-screen w-screen h-auto overflow-x-hidden`}
+        className={`${interSans.variable} ${Baskerville.variable} antialiased bg-background text-foreground mx-auto max-w-[1210px] w-screen h-auto overflow-x-hidden`}
       >
         <TopNav />
         {children}
