@@ -51,7 +51,7 @@ export default function Home() {
      
       
       <div
-        className="row-span-1 sm:row-span-2 text-[14rem] leading-none text-gray-300  md:text-[18rem] lg:text-[18rem] lg:col-span-2 md:col-span-1 col-span-1 mt-auto"
+        className="row-span-1 sm:row-span-2 text-[14rem] leading-none text-gray-100  md:text-[18rem] lg:text-[18rem] lg:col-span-2 md:col-span-1 col-span-1 mt-auto"
         ref={parentContainer}
       >
         
@@ -78,7 +78,7 @@ export default function Home() {
         </React.Fragment>
       ))}
 
-      <div className="col-span-1 text-gray-300 row-span-1 text-[1.75rem]"> MISSION </div>
+      <div className="col-span-1 text-gray-100 row-span-1 text-[1.75rem]"> MISSION </div>
       <p className="text-background-600 col-span-1  lg:col-span-3 text-[1.5rem]  row-span-1 ">
         Die Firma hat sich der Erhaltung, Restaurierung und adaptiven
         Wiederverwendung historischer Gebäude in ganz Deutschland verschrieben.
@@ -86,7 +86,7 @@ export default function Home() {
         moderne Funktionalität in geschützte Strukturen zu integrieren.
       </p>
 
-      <div className="col-span-1 text-gray-300 row-span-1 text-[1.75rem]"> STORY </div>
+      <div className="col-span-1 text-gray-100 row-span-1 text-[1.75rem]"> STORY </div>
 
       <p className="text-background-600 col-span-1 lg:col-span-3 text-[1.5rem]  row-span-1 ">
         Wir stellen uns eine Zukunft vor, in der jeder historische Ort nicht nur
@@ -97,14 +97,14 @@ export default function Home() {
       </p>
 
       <div className="lg:col-span-4 lg:row-span-2 md:col-span-2 md:row-span-2 col-span-1 mt-16 row-span-3">
-        <div className="col-span-1 text-gray-300 mt-auto py-2 md:col-span-2 lg:col-span-4 row-span-1 text-[1.75rem]">
+        <div className="col-span-1 text-gray-100 mt-auto py-2 md:col-span-2 lg:col-span-4 row-span-1 text-[1.75rem]">
           {" "}
           AUSZEICHNUNGEN{" "}
         </div>
         {[1, 2, 3, 4, 5, 6].map((item) => (
           <div
             key={item}
-            className=" border-b py-[2rem] px-2 border-gray-300 flex flex-row justify-between cursor-pointer hover:bg-gray-300/10 hover:text-white "
+            className=" border-b py-[2rem] px-2 border-gray-100 flex flex-row justify-between cursor-pointer hover:bg-gray-100/10 hover:text-white "
           >
             <div className="text-[1rem]">2024</div>
             <div className="text-[1rem]">Architekturpreis</div>

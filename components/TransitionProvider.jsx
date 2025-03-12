@@ -82,14 +82,16 @@ export function TransitionProvider({ children }) {
 
       <div
         ref={firstLayer}
-        className="fixed inset-0 z-[999] translate-y-full bg-foreground text-8xl text-center flex items-center justify-center"
+        className="fixed inset-0 z-[999] translate-y-full bg-background text-8xl text-center flex items-center justify-center"
         key={1}
       ></div>
       <div
         ref={secondLayer}
         className="fixed inset-0 z-[999] translate-y-full bg-background text-8xl text-center flex items-center justify-center"
         key={2}
-      ></div>
+      >
+        <Image src="/favicon.png" alt="Plus Icon" width={280} height={280} />
+      </div>
     </TransitionRouter>
   );
 }
