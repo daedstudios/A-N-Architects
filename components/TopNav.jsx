@@ -25,7 +25,7 @@ const TopNav = () => {
       <div
         className={`h-[5.5rem]  top-0 z-90 bg-background sticky flex justify-between items-center px-4`}
       >
-        <div className=" text-1xl text-gray-300">
+        <div className=" text-1xl text-gray-200">
           <p>ALT+</p>
         </div>
 
