@@ -8,13 +8,13 @@ const Footer = () => {
       <div className="relative w-[16rem] h-[8rem] col-span-1 row-span-1">
         <Image alt="logo" src="/favicon.png" width={96} height={96} />
       </div>
-      <div className="col-span-1 mt-2 row-span-1 text-[1rem] text-background-500">
+      <div className="col-span-1 mt-2 row-span-1 text-[1rem] text-foreground">
         <p> hello@altundneu.com</p>
         <p className="pb-[6rem]"> +49 170 1417983</p>
         <p> Am Ackerhof 13</p>
         <p> 54317 Kassel</p>
       </div>
-      <div className="relative hidden mt-2 lg:block col-span-1 row-span-1 text-[1rem] text-background-500">
+      <div className="relative hidden mt-2 lg:block col-span-1 row-span-1 text-[1rem] text-foreground">
         <div className="hover:text-gray-200">
           <Link href="/">home</Link>
         </div>
@@ -31,7 +31,7 @@ const Footer = () => {
           ARCHITEKTUR
         </div>
       </div>
-      <div className="relative mt-2 col-span-1 row-span-1 text-[1rem] h-full text-background-500">
+      <div className="relative mt-2 col-span-1 row-span-1 text-[1rem] h-full text-foreground">
         <div>
           <Link
             href="https://www.instagram.com/"

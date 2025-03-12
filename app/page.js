@@ -37,21 +37,21 @@ export default function Home() {
     gsap.to(parentContainer.current, {
       y: "-30%",
       scrollTrigger: {
-        trigger: parentContainer.current,
+        trigger: parentContainer.current, 
         start: "bottom 60%",
         end: "bottom top",
         scrub: 1,
+       
       },
     });
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-[auto] grid-rows-[repeat(18,_18rem)] md:grid-rows-[repeat(12,_18rem)] lg:grid-rows-[repeat(9,_18rem)] px-2 gap-2 min-h-screen text-4xl">
-      
-     
+    
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 pt-48 grid-cols-[auto] grid-rows-[repeat(18,_18rem)] md:grid-rows-[repeat(12,_18rem)] lg:grid-rows-[repeat(9,_18rem)] px-2 gap-2 min-h-screen text-4xl">
       
       <div
-        className="row-span-1 sm:row-span-2 text-[14rem] leading-none text-gray-100  md:text-[18rem] lg:text-[18rem] lg:col-span-2 md:col-span-1 col-span-1 mt-auto"
+        className="row-span-1 sm:row-span-1 text-[10rem] leading-none text-gray-100  md:text-[18rem] lg:text-[18rem] lg:col-span-2 md:col-span-1 col-span-1  "
         ref={parentContainer}
       >
         
@@ -59,19 +59,19 @@ export default function Home() {
   
         
       </div>
+     
       <div
-        className="row-span-1 hidden md:block mt-auto text-[1rem] lg:col-span-1 md:col-span-1 col-span-1 max-w-[12rem]  ">
-      ARCHITEKTUR + RAUMKULTUR SEIT 1992</div>
-      <div
-        className="row-span-1 k  lg:col-span-2 md:col-span-1 col-span-1 mt-auto"
+        className="row-span-1 lg:col-span-1 md:col-span-1 col-span-1 mr-auto mt-auto"
         ref={neuContainer}
       >
-      
-        <div className="inline-block ml-auto" ref={crossRef}>
+       
+        <div className="inline-block" ref={crossRef}>
           <Image src="/plus.svg" alt="Plus Icon" width={280} height={280} />
        </div>
       </div>
-     
+       <div
+        className="row-span-1 hidden md:block text-[1rem] lg:col-span-1 md:col-span-1 col-span-1 max-w-[12rem]  ">
+      ARCHITEKTUR + RAUMKULTUR SEIT 1992</div>
       {projects_data.map(({ name, details, slug, image }) => (
         <React.Fragment key={name}>
           <ImageComponent image={image} details={details} slug={slug} />
