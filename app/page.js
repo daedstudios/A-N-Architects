@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import Image from "next/image";
+import ProjectAndContact from "@/components/ProjectAndContact";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -51,7 +52,7 @@ export default function Home() {
     <div className="grid md:grid-cols-2 lg:grid-cols-4 pt-48 grid-cols-[auto] grid-rows-[repeat(18,_18rem)] md:grid-rows-[repeat(12,_18rem)] lg:grid-rows-[repeat(9,_18rem)] px-2 gap-2 min-h-screen text-4xl">
       
       <div
-        className="row-span-1 sm:row-span-1 text-[10rem] leading-none text-gray-100  md:text-[18rem] lg:text-[18rem] lg:col-span-2 md:col-span-1 col-span-1  "
+        className="row-span-1 sm:row-span-1 text-[14rem] leading-none text-gray-100  md:text-[18rem] lg:text-[18rem] lg:col-span-2 md:col-span-2 col-span-1  "
         ref={parentContainer}
       >
         
@@ -112,7 +113,8 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div className="col-span-1 row-span-1 h-full lg:hidden "> </div>
+      <div className="row-span-1 col-span-1 md:col-span-2 lg:col-span-4 hidden md:block"></div>
+      <ProjectAndContact/>
     </div>
   );
 }

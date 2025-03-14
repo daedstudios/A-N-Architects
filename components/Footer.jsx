@@ -14,7 +14,7 @@ const Footer = () => {
         <p> Am Ackerhof 13</p>
         <p> 54317 Kassel</p>
       </div>
-      <div className="relative hidden mt-2 lg:block col-span-1 row-span-1 text-[1rem] text-foreground">
+      <div className="relative  mt-2 md:block col-span-1 row-span-1 text-[1rem] text-foreground">
         <div className="hover:text-gray-200">
           <Link href="/">home</Link>
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="hover:text-gray-200">
           <Link href="/team">team</Link>
         </div>
-        <div className="text-black text-[4rem] absolute bottom-0 left-0">
+        <div className="text-black hidden md:block text-[4rem] absolute bottom-0 left-0">
           ARCHITEKTUR
         </div>
       </div>
